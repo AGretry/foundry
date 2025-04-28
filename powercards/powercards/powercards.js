@@ -63,7 +63,7 @@ const PowerCards = (() => {
 			}
 			
 			// DEFAULT FORMATTING
-			let playerBGColor = game.user.color;
+			let playerBGColor = game.user.color.toString();
 			let playerTXColor = (getBrightness(playerBGColor) < (255 / 2)) ? "#FFFFFF" : "#000000";
 			let playerTXShadow = (getBrightness(playerTXColor) < (255 / 2)) ? "#FFFFFF" : "#000000";
 			
