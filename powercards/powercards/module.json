@@ -9,7 +9,7 @@
 	"scripts": ["powercards.js"],
 	"styles": ["powercards.css"],
 	"socket": true,
-	"url": "https://github.com/Sky-Captain-13/foundry/tree/master/powercards",
-	"manifest": "https://raw.githubusercontent.com/Sky-Captain-13/foundry/master/powercards/powercards/module.json",
-	"download": "https://github.com/Sky-Captain-13/foundry/raw/master/powercards/powercards.zip"
+	"url": "https://github.com/AGretry/foundry/tree/master/powercards",
+	"manifest": "https://raw.githubusercontent.com/AGretry/foundry/master/powercards/powercards/module.json",
+	"download": "https://github.com/AGretry/foundry/raw/master/powercards/powercards.zip"
 }
