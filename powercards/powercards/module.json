@@ -3,7 +3,7 @@
 	"title": "PowerCards_Updated",
 	"author": "Sky#9453",
 	"description": "A work in progress... use at your own peril.",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"minimumCoreVersion": "0.0.0",
 	"compatibleCoreVersion": "12.331",
 	"scripts": ["powercards.js"],
