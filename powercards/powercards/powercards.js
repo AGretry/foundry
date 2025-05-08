@@ -33,7 +33,7 @@ const PowerCards = (() => {
 	
 	const handleInput = function(message, chatData) {
 		if (chatData.split(" ")[0].toLowerCase().trim() === "!power") {
-			let activeGM = game.users.find(a => a.active && a.isGM)._id || false;
+			let activeGM = game.users.find(a => a.active && a.isGM)._id ?? false || false;
 			let data = { activeGM: activeGM, user: game.user, content: chatData.replace("!power", "").trim()};
 			content = processCommand(data);
 			//else content = game.socket.emit("module.powercards", data);
