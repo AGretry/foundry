@@ -1,7 +1,7 @@
 const PowerCards = (() => {
 	// VERSION INFORMATION
 	const PowerCards_Author = "Sky#9453";
-	const PowerCards_Version = "1.0.4";
+	const PowerCards_Version = "1.0.5";
 	const PowerCards_LastUpdated = 1606095032;
 	
 	// CONFIGURATION
