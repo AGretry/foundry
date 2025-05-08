@@ -35,8 +35,8 @@ const PowerCards = (() => {
 		if (chatData.split(" ")[0].toLowerCase().trim() === "!power") {
 			let activeGM = game.users.find(a => a.active && a.isGM)._id || false;
 			let data = { activeGM: activeGM, user: game.user, content: chatData.replace("!power", "").trim()};
-			if (game.user.isGM) content = processCommand(data);
-			else content = game.socket.emit("module.powercards", data);
+			content = processCommand(data);
+			//else content = game.socket.emit("module.powercards", data);
 			
 			// DO NOT SEND ORIGINAL MESSAGE TO CHAT
 			return false;
@@ -44,7 +44,7 @@ const PowerCards = (() => {
 	};
 	
 	const processCommand = function(data) {
-		if (game.user.id == data.activeGM) {
+		//if (game.user.id == data.activeGM) {
 			let who = data.user.name;
 			let content = data.content;
 			let card = {};
@@ -167,7 +167,7 @@ const PowerCards = (() => {
 				type: CONST.CHAT_MESSAGE_TYPES.OTHER,
 				sound: ""
 			});
-		}
+		//}
 	};
 	
 	// HOOKS
